@@ -130,11 +130,11 @@ class GoldMinerGame {
                 bigStoneChance = 0.05;
                 break;
             case 'normal':
-                goldChance = 0.3;
-                diamondChance = 0.2;
-                goldBlockChance = 0.2;
-                smallStoneChance = 0.15;
-                bigStoneChance = 0.15;
+                goldChance = 0.35;
+                diamondChance = 0.22;
+                goldBlockChance = 0.18;
+                smallStoneChance = 0.13;
+                bigStoneChance = 0.12;
                 break;
             case 'hard':
                 goldChance = 0.2;
@@ -318,11 +318,11 @@ class GoldMinerGame {
                 this.config.rotationSpeed = 0.03;
                 break;
             case 'normal':
-                this.timeLeft = 60;
-                this.targetScore = 500;
-                this.config.hookSpeed = 3;
-                this.config.hookPullSpeed = 2;
-                this.config.rotationSpeed = 0.02;
+                this.timeLeft = 75; // increased time for balanced play
+                this.targetScore = 400; // reduced target for balanced play
+                this.config.hookSpeed = 3.2; // slightly faster hook
+                this.config.hookPullSpeed = 2.3; // slightly faster pull
+                this.config.rotationSpeed = 0.025; // slightly faster rotation
                 break;
             case 'hard':
                 this.timeLeft = 45;
